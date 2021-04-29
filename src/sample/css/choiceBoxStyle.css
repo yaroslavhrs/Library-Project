@@ -1,0 +1,8 @@
+// Фон для всього контекстного меню
+.choice-box .context-menu { -fx-background-color: #F6ECD3; }
+
+// Фон для обраного елементу у списку
+.choice-box .menu-item:focused { -fx-background-color: #ECCFA5; }
+
+// Колір тексту обраного елементу у списку
+.choice-box .menu-item:focused > .label { -fx-text-fill: black; }

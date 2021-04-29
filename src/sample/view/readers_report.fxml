@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: ECCFA5;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ReportReadersController">
+    <Button fx:id="leftPanelReadersButton" layoutX="10.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedReaders" onMouseEntered="#onMouseEnteredReaders" onMouseExited="#onMouseExitedReaders" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #F6ECD3; -fx-background-radius: 10 0 0 10;" text="Облік читачів">
+        <font>
+            <Font name="Times New Roman" size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="leftPanelBooksButton" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedBooks" onMouseEntered="#onMouseEnteredBooks" onMouseExited="#onMouseExitedBooks" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #ECCFA5; -fx-background-radius: 10 0 0 10;" text="Облік книг">
+        <font>
+            <Font name="Times New Roman" size="18.0" />
+        </font>
+    </Button>
+   <Line endX="169.0" endY="145.0" startX="26.0" startY="145.0" />
+    <AnchorPane layoutX="181.0" layoutY="5.0" prefHeight="690.0" prefWidth="805.0" style="-fx-background-color: #F6ECD3; -fx-background-radius: 10 10 10 10;">
+      <ImageView fx:id="backButton" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back_icon.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="reportTextArea" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="5.0" layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="635.0" prefWidth="795.0" scaleShape="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+    </AnchorPane>
+</AnchorPane>

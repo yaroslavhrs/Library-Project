@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: ECCFA5;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AddReaderController">
+    <AnchorPane layoutX="190.0" layoutY="5.0" prefHeight="690.0" prefWidth="805.0" style="-fx-background-color: #F6ECD3; -fx-background-radius: 10 10 10 10;">
+        <TextField fx:id="nameTextField" layoutX="35.0" layoutY="215.0" prefHeight="31.0" prefWidth="170.0" promptText="ПІБ" style="-fx-background-color: #ECCFA5; -fx-border-color: #BABABA; -fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);">
+            <font>
+                <Font name="Times New Roman Bold" size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="addressTextField" focusTraversable="false" layoutX="204.0" layoutY="215.0" prefHeight="31.0" prefWidth="170.0" promptText="Адреса" style="-fx-background-color: #ECCFA5; -fx-border-color: #BABABA; -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);">
+            <font>
+                <Font name="Times New Roman Bold" size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="birthdayTextField" focusTraversable="false" layoutX="373.0" layoutY="215.0" prefHeight="31.0" prefWidth="208.0" promptText="Дата народж. ДД.ММ.РРРР" style="-fx-background-color: #ECCFA5; -fx-border-color: #BABABA; -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);">
+            <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="phoneTextField" focusTraversable="false" layoutX="580.0" layoutY="215.0" prefHeight="31.0" prefWidth="197.0" promptText="Телефон 0ХХ-ХХХ-ХХХХ" style="-fx-background-color: #ECCFA5; -fx-border-color: #BABABA; -fx-background-radius: 0 10 10 0; -fx-border-radius: 0 10 10 0; -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);">
+            <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="saveReaderButton" layoutX="595.0" layoutY="275.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #ECCFA5; -fx-background-radius: 10 10 10 10;" text="Зберегти">
+            <font>
+                <Font name="Times New Roman" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="backButton" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../assets/back_icon.png" />
+        </ImageView>
+        <Text layoutX="326.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Додавання читача">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Text>
+    </AnchorPane>
+    <Button fx:id="leftPanelReadersButton" layoutX="10.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedReaders" onMouseEntered="#onMouseEnteredReaders" onMouseExited="#onMouseExitedReaders" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #F6ECD3; -fx-background-radius: 10 0 0 10;" text="Облік читачів">
+        <font>
+            <Font name="Times New Roman" size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="leftPanelBooksButton" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedBooks" onMouseEntered="#onMouseEnteredBooks" onMouseExited="#onMouseExitedBooks" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #ECCFA5; -fx-background-radius: 10 0 0 10;" text="Облік книг">
+        <font>
+            <Font name="Times New Roman" size="18.0" />
+        </font>
+    </Button>
+</AnchorPane>
